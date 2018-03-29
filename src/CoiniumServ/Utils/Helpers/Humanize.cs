@@ -49,7 +49,7 @@ namespace CoiniumServ.Utils.Helpers
 
             do
             {
-                rate = rate/1000;
+                rate = rate / 1000;
                 index++;
             } while (rate > 1000);
 
@@ -73,7 +73,7 @@ namespace CoiniumServ.Utils.Helpers
 
             do
             {
-                rate = rate/1000;
+                rate = rate / 1000;
                 index++;
             } while (rate > 1000);
 

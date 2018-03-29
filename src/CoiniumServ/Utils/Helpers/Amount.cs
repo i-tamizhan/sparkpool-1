@@ -48,8 +48,8 @@ namespace CoiniumServ.Utils.Helpers
             set
             {
                 _coins = value;
-                _millitBits = value*1000;
-                _microBits = _millitBits*1000;
+                _millitBits = value * 1000;
+                _microBits = _millitBits * 1000;
                 _satoshis = _microBits * 100;
             }
         }
@@ -63,7 +63,7 @@ namespace CoiniumServ.Utils.Helpers
             set
             {
                 _millitBits = value;
-                _coins = value/1000;
+                _coins = value / 1000;
                 _microBits = _millitBits * 1000;
                 _satoshis = _microBits * 100;
             }
