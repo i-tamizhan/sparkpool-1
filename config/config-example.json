@@ -38,7 +38,8 @@
 		"port": 80,
         "backend" : {
             "metrics": {
-                "enabled": false
+                "enabled": false,
+				"password":""
             }
         }
 	},

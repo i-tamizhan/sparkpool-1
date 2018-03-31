@@ -21,25 +21,31 @@
         "feed": "",
         "backend": {
             "metrics": {
-                "enabled": false
+                "enabled": false,
+				"password":""
             }
         }
     },
     "logging": {
         "root": "logs",
         "targets": [
+			{
+				"enabled": true,
+				"type": "console",
+				"level": "debug"
+			},
             {
                 "enabled": true,
                 "type": "file",
                 "filename": "server.log",
-                "rolling": false,
+                "rolling": true,
                 "level": "information"
             },
             {
                 "enabled": true,
                 "type": "file",
                 "filename": "debug.log",
-                "rolling": false,
+                "rolling": true,
                 "level": "verbose"
             },
             {
